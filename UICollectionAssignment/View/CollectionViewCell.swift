@@ -9,6 +9,7 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
+    var isCellSelected:Bool = false
     @IBOutlet weak var collectionViewCellLabel: UILabel!
     
 }

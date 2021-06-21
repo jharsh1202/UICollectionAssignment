@@ -18,10 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="cell data" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xXf-qg-fDe">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xXf-qg-fDe">
                                 <rect key="frame" x="0.0" y="44" width="414" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" hint="Selected Cell Data"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -70,6 +71,7 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
                     <connections>
+                        <outlet property="cellDataTextView" destination="xXf-qg-fDe" id="9Af-7u-w26"/>
                         <outlet property="collectionView" destination="b42-6D-Wt6" id="qza-sY-x14"/>
                     </connections>
                 </viewController>
